@@ -1,0 +1,192 @@
+:root{
+ --primary-color: rgb(40, 80, 80); 
+ --secondary-color:  rgb(243, 187, 4); 
+
+}
+body{
+    margin: 0;  
+    font-family: "inter";
+    color: var(--primary-color);
+    
+}
+.container{
+    padding: 0 50px;
+}
+.header{
+    height: 70px;
+    background-color:white;
+    box-shadow: 0px 2px 5px rgb(132, 172, 185);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.header h2{
+    margin: 0;
+    font-size: 40px;
+}
+.header a{
+    text-decoration: none;
+    color:rgb(40, 80, 80) ; 
+    font-weight:600;
+}
+.header a{
+  padding: 10px 20px;
+}
+.header a:hover{
+    background-color:var(--secondary-color);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+/* ===============PROFILE================== */
+.profile{
+    /* height: 80vh; */
+    /* background-color: cadetblue; */
+    margin: 50px 0;
+    display: flex;
+    align-items: center ;
+}
+.sidebar p:first-child{
+    color:var(--secondary-color);
+    font-size: 2.5vw;
+    margin: 0;
+}
+.sidebar h1{
+    font-size: 5vw;
+    color:var(--primary-color) ; 
+    margin: 0;
+}
+.sidebar h1 + p{
+    color: var(--primary-color);
+    font-weight: 900;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size:  2vw;
+}
+.sidebar button{
+    margin-top: 10px;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 2vw;
+    padding: .5vw 1.5vw;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px rgb(132, 172, 185);
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+}
+.sidebar button:last-child{
+    background-color: transparent;
+    border:1px solid var(--primary-color) ;
+    color: var(--primary-color);
+}
+.sidebar button:hover{
+    background-color: rgba(40, 80, 80, 0.082);
+    color: var(--primary-color);
+}
+.rightbar{
+    /* background-color: antiquewhite; */
+    height: auto;
+}
+.image img{
+    height: 32vw;
+    border-radius: 50%;
+    box-shadow: 0px 1px 5px rgb(132, 172, 185);
+}
+.fb-linkin{
+    display: flex;
+    justify-content: center;
+}   
+.icon{
+    width: 30px;
+    padding: 0px;
+    padding-top: 15px;
+    margin: 0 5px;
+    transition: 0.5s;
+}
+.icon:hover{
+    transform: scale(1.4);
+}
+/* ===============  END OF PROFILE================== */
+
+
+/* ===============  ABOUT ME ================= */
+.aboutme{
+    /* height: 80vh;    */
+    margin: 10vw 0;
+    /* background-color: rgb(127, 186, 238); */
+}
+.aboutme h1{
+    color: var(--primary-color);
+    font-size: 45px;
+}
+.aboutme .introduction{
+    font-size: 22px;
+    color: rgb(2, 87, 78);
+    margin-top: 40px;
+    margin: 0;
+    font-weight: 25px;
+    line-height: 35px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+    row-gap:20px;
+    margin-top:20px;
+    align-items: center;
+}
+.grid-container div{
+    font-size:20px;
+    color: var(--primary-color);
+
+}
+.grid-container .img{
+    color: #2458be;
+    font-size:30px;
+}
+
+
+/* =============== END OF ABOUT ME ================= */
+.myskills{
+    margin: 20vw 0; 
+}
+.sub-title{
+    font-size: 45px;        
+    color: rgb(2, 87, 78);
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 25px;
+    padding-top: 50px;
+}
+.myskills h2{
+    color: rgb(2, 87, 78);
+    margin-top: 30px;
+    margin-bottom: 8px;
+    font-size: 30px;
+}      
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;  
+
+}
+.chip{
+    background-color: rgb(243, 187, 4);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px rgb(132, 172, 185);
+    color: rgb(254, 255, 255);
+    margin: 10px;
+}   
+/* =============== END OF MY SKILLS ================= */
+label{
+    display: none;
+}
+#check{
+    z-index:3;
+    display: none;
+}
